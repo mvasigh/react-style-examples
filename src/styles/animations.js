@@ -10,4 +10,4 @@ export const slideUp = keyframes`
     transform: translateY(0px);
     opacity: 1;
   }
-`
+`;

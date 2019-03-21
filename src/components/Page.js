@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Feed from './Feed';
 import Menu from './Menu';
-import { getHslString } from '../libs/util'
+import { getHslString } from '../libs/util';
 
 const Layout = styled.div`
   display: flex;

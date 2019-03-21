@@ -12,14 +12,11 @@ const StyledCard = styled.div`
     getHslString(hue, 50, theme.shades.extraLight)};
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
+  margin-bottom: 2rem;
 
   :hover {
     box-shadow: 0px 19px 14px -8px rgba(0, 0, 0, 0.1);
     transform: scale(1.02);
-  }
-
-  :not(:last-child) {
-    margin-bottom: 2rem;
   }
 
   .thumbnail {
@@ -57,8 +54,7 @@ const StyledCard = styled.div`
       letter-spacing: 4px;
       font-weight: 700;
       text-transform: uppercase;
-      color: ${({ theme, hue }) =>
-        getHslString(hue, 50, theme.shades.medium)};
+      color: ${({ theme, hue }) => getHslString(hue, 50, theme.shades.medium)};
     }
 
     .title {
