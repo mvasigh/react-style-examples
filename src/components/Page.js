@@ -25,13 +25,13 @@ const Layout = styled.div`
 `;
 
 const BaseStyles = createGlobalStyle`
-  html,
   body {
     background-color: ${({ theme, hue }) =>
       getHslString(hue, 50, theme.shades.medium)};
     font-family: 'Nunito', sans-serif;
     margin: 0;
     transition: 0.3s ease;
+    transition-property: background-color;
   }
 `;
 

@@ -11,6 +11,7 @@ const StyledMenu = styled.div`
 const Form = styled.form`
   display: flex;
   flex-direction: row;
+  margin-bottom: 1.8rem;
 
   * {
     font-family: 'Nunito', sans-serif;
@@ -47,13 +48,25 @@ const Button = styled.button`
   outline: none;
 `;
 
+const SmallText = styled.span`
+  &,
+  a,
+  a:visited,
+  a:active {
+    color: ${({ theme, hue }) => getHslString(hue, 50, theme.shades.dark)};
+    outline: none;
+  }
+  display: block;
+  text-align: center;
+`;
+
 const Menu = ({ hue, setSubreddit }) => {
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
     setSubreddit(value);
-    setValue('')
+    setValue('');
   };
 
   return (
@@ -62,6 +75,9 @@ const Menu = ({ hue, setSubreddit }) => {
         <Input value={value} onChange={e => setValue(e.target.value)} />
         <Button>Go</Button>
       </Form>
+      <SmallText hue={hue}>
+        Made with ❤ by <a href="https://www.github.com/mvasigh">Mehdi Vasigh</a>
+      </SmallText>
     </StyledMenu>
   );
 };
