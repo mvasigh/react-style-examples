@@ -1,0 +1,32 @@
+{
+  "name": "react-styled-example",
+  "version": "1.0.0",
+  "description": "Demo app for React styling presentation. This project is bundled with [Parcel](https://parceljs.org/), a neat zero-config web application bundler.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvasigh/react-styled-example.git"
+  },
+  "author": "Mehdi Vasigh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvasigh/react-styled-example/issues"
+  },
+  "homepage": "https://github.com/mvasigh/react-styled-example#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "semantic-ui-react": "^0.86.0",
+    "styled-components": "^4.1.3",
+    "typeface-nunito": "0.0.72"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "babel-plugin-styled-components": "^1.10.0"
+  }
+}
